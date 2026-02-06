@@ -56,3 +56,45 @@ fun main(){
      val u =  Unrelated(o)
      u.printAll()
 }
+
+
+// Factory method 
+// - its a fun which creates objects without letting user call constructor directly
+// - controlling obj creation
+
+// eg - without factory
+
+class User{
+    var a = 0;
+    var b = 0;
+    constructor(teamA:Int,teamB:Int){
+        a = teamA;
+        b = teamB
+    }
+}
+val user = User(10,2)
+
+// with factory
+
+class UserAge private constructor(
+    val a:Int, val b:Int
+) {
+    companion object{
+        fun create(a:Int, b:Int):UserAge{
+            return UserAge(a,b)
+        }
+    }
+}
+val userAge = UserAge.create(12, 2)
+
+//  when need this
+//      - return null when validation failes
+//      - rteurn a  diffrent type
+//      - cache and meaningful names
+
+// validation can also be done with simple constructor but it will throw error when 
+// validation fails not null
+
+
+// READ GFG MORE 
+
