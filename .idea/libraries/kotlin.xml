@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="kotlin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/kotlin/array.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kotlin/exception.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kotlin/condition-and-loops.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
